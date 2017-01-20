@@ -27,19 +27,19 @@ set ignorecase
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
 
-"do not use
-" ステータスラインを常に表示
-set laststatus=2
-" 検索文字列に大文字が含まれている場合は区別して検索する
-set smartcase 
-
-"default
-" 入力中のコマンドをステータスに表示する
-set showcmd
-" 括弧入力時の対応する括弧を表示
-set showmatch
-" 検索時に最後まで行ったら最初に戻る
-set wrapscan
-" 検索語をハイライト表示
-set hlsearch
+""" "do not use
+""" " ステータスラインを常に表示
+""" set laststatus=2
+""" " 検索文字列に大文字が含まれている場合は区別して検索する
+""" set smartcase 
+""" 
+""" "default
+""" " 入力中のコマンドをステータスに表示する
+""" set showcmd
+""" " 括弧入力時の対応する括弧を表示
+""" set showmatch
+""" " 検索時に最後まで行ったら最初に戻る
+""" set wrapscan
+""" " 検索語をハイライト表示
+""" set hlsearch
 
