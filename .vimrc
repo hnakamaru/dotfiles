@@ -1,4 +1,3 @@
-colorscheme molokai
 syntax on
 
 set sw=4
@@ -26,6 +25,14 @@ nnoremap k gk
 set ignorecase
 " ESC連打でハイライト解除
 nmap <Esc><Esc> :nohlsearch<CR><Esc>
+" クリップボードの共有
+set clipboard=unnamed
+" color設定
+colorscheme molokai
+" バックアップファイル(~)を作成しない
+set nobackup
+" アンドゥファイル(.un~)を作成しない
+set noundofile
 
 """ "do not use
 """ " ステータスラインを常に表示
@@ -42,4 +49,26 @@ nmap <Esc><Esc> :nohlsearch<CR><Esc>
 """ set wrapscan
 """ " 検索語をハイライト表示
 """ set hlsearch
+
+
+if has("mac")
+" mac用の設定
+elseif has("unix")
+" unix固有の設定
+elseif has("win64")
+" 64bit_windows固有の設定
+	set guifont=Ricty:h11
+	set noswapfile
+	" 縦幅　デフォルトは24
+	set lines=40
+	" 横幅　デフォルトは80
+	set columns=120
+elseif has("win32unix")
+" Cygwin固有の設定
+elseif has("win32")
+" 32bit_windows固有の設定
+endif
+
+
+
 
