@@ -31,8 +31,6 @@ set clipboard=unnamed
 colorscheme molokai
 " バックアップファイル(~)を作成しない
 set nobackup
-" アンドゥファイル(.un~)を作成しない
-set noundofile
 
 """ "do not use
 """ " ステータスラインを常に表示
@@ -63,6 +61,8 @@ elseif has("win64")
 	set lines=40
 	" 横幅　デフォルトは80
 	set columns=120
+	" アンドゥファイル(.un~)を作成しない
+	set noundofile
 elseif has("win32unix")
 " Cygwin固有の設定
 elseif has("win32")
